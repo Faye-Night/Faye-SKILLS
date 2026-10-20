@@ -1,0 +1,23 @@
+# 让 Git 自动识别文本文件
+* text=auto
+
+# 文档与配置：统一 LF（跨平台友好，避免 Windows/Linux 换行不一致）
+*.md   text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.txt  text eol=lf
+*.py   text eol=lf
+*.sh   text eol=lf
+
+# Windows 脚本保留 CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# 二进制文件不处理
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.zip  binary
+*.7z   binary
